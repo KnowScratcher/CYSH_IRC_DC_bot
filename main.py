@@ -12,6 +12,7 @@ bot = commands.Bot(command_prefix="!", intents=discord.Intents.default())
 #=======================================================
 @tasks.loop(count=1)
 async def on_ready():
+    await bot.wait_until_ready()
     print(f'Bot 已上線 {bot.user}')
     channel_1 = bot.get_channel(自行更改第一個頻道ID) #簽到區
     channel_2 = bot.get_channel(自行更改第二個頻道ID) #請假區
