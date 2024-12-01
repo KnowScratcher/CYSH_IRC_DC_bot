@@ -10,7 +10,7 @@ discord.Intents.default().members = True
 bot = commands.Bot(command_prefix="!", intents=discord.Intents.default())
 
 #=======================================================
-@tasks.loop(time=1)
+@tasks.loop(count=1)
 async def on_ready():
     print(f'Bot 已上線 {bot.user}')
     channel_1 = bot.get_channel(自行更改第一個頻道ID) #簽到區
