@@ -19,6 +19,7 @@ async def on_ready():
         await send_signup_button(channel_1)
         await send_leave_button(channel_2)
     await bot.tree.sync() 
+on_ready.start()
 #=======================================================
 user_data_path = "registered_students.json"
 def load_users_data(file_path):
